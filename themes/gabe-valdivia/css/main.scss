@@ -1,0 +1,147 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+
+// 2. Include any default variable overrides here
+$primary: #000000;
+$secondary: #555555;
+$gray: #6B6D77;
+$lavander: #E6EEFF;
+$ghostWhite: #FAFBFF;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "gray": $gray
+);
+
+// Custom Colors
+$custom-colors: (
+    "lavendar": #E6EEFF,
+    "ghostWhite": #FAFBFF
+);
+
+//Merge maps
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+// 6. Add additional custom code here
+@import "./bootstrap/scss/bootstrap";
+// Custom.scss
+
+// Include any default variable overrides here
+
+.site-header {
+    .navbar, .offcanvas {
+        margin-top: 30px;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a.gv-site-name {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+        color: $primary;
+        font-size: 2.25rem;
+    }
+}
+
+.offcanvas-body {
+    
+    .gv-follow-me {
+        padding: 0;
+        margin-top: 60px;
+    }
+    
+
+    ul {
+       margin: 0;
+       padding: 0;
+    }
+
+    li {
+        display: inline;
+        padding-right: 7px;
+       
+        a {
+            color: $secondary;
+            text-decoration: none;
+        }
+    }
+
+    i.bi.bi-linkedin, 
+    i.bi.bi-github,
+    i.bi.bi-youtube {
+        font-size: 26px;
+        color: $primary;
+    }
+}
+
+.navbar-custom {
+    background-color: $lavander;
+}
+
+
+//Footer Section
+.site-footer {
+    background-color: #5B6EB6;
+
+    .site-info {        
+        
+        padding: 90px 20px;
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .copyright-section {
+        color: white;
+        background-color: $primary;
+        padding: 2px 0;
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    .widget {
+        max-width: 300px;
+
+        h5 {
+            font-family: "Merriweather", sans-serif;
+        }
+
+        p, 
+        li, 
+        a {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                margin: 4px 0;
+
+                a{
+                    color: var(--bs-white-rgb);
+                    text-decoration: none;
+
+                    i.bi.bi-linkedin, 
+                    i.bi.bi-github,
+                    i.bi.bi-youtube {
+                    font-size: 1.1rem;
+                    padding-right: 6px;
+                    }
+                }
+            } 
+        }
+    }
+}
