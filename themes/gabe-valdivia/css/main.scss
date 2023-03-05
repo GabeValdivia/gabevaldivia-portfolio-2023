@@ -30,6 +30,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
 // Include any default variable overrides here
 
+.page {
+    margin-bottom: 0;
+}
 
 // Nav Section
 .site-header {
@@ -134,12 +137,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
 //About Me Section & Latest Projects Shared Styles
 .about-bg-section,
-.portfolio-bg-section {
+.portfolio-bg-section,
+.gvblog-bg-section {
     background-color: $ghostWhite;
     padding: 80px 20px;
 
     .about-section,
-    .portfolio-section {
+    .portfolio-section,
+    .gvblog-section {
         margin: 30px 0;
 
         h2 {
@@ -186,7 +191,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 .gvcta-bg-section {
     background-color: #5B6EB6;
     color: #FFF;
-    padding: 40px 20px;
+    padding: 80px 20px;
     font-size: 1.4rem;
     font-weight: bold;
 
@@ -204,6 +209,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
         }
     }
 }
+
+// Recent Blog Section
+
+
 
 //Footer Section
 .site-footer {

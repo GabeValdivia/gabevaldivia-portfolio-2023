@@ -131,10 +131,48 @@ get_header();
 		<!-- End CTA Section -->
 
 		<!-- Blog Section -->
+		<div class="gvblog-bg-section">
+			<section class="container">
+				<div class="row gvblog-section">
+					<div class="col-md-12">
+						<h2>Blog</h2>
+					</div>
+				</div>
+				<div class="row gvblog-section">
+					<!-- <div class="col-md-12"> -->
+						<!--Blog loop-->
+						<?php 
+						// the query
+						$the_query = new WP_Query( array(
+							'category_name' => 'recent',
+							'posts_per_page' => 3,
+						)); 
+						?>
+
+						<?php if ( $the_query->have_posts() ) : ?>
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<div class="col-md-4 col-sm-12 grid gap-0 gap-3">
+								<?php the_post_thumbnail(); ?>
+								<h3><?php the_title(); ?></h3>
+								<small>On <?php the_time('F jS, Y'); ?></small>
+								<p><?php the_excerpt(); ?></p>
+							</div>
+							
+							
+
+						<?php endwhile; ?>
+						<?php wp_reset_postdata(); ?>
+
+						<?php else : ?>
+						<p><?php __('No News'); ?></p>
+						<?php endif; ?>
+					<!-- </div> -->
+				</div>
+			</section>
+		</div>			
 		<!-- End Blog Section -->
 
 	</main><!-- #main -->
 
 <?php
-// get_sidebar();
 get_footer();

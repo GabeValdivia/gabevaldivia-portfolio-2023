@@ -11469,6 +11469,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.page {
+  margin-bottom: 0;
+}
+
 .site-header .navbar, .site-header .offcanvas {
   margin-top: 30px;
 }
@@ -11552,23 +11556,39 @@ textarea.form-control-lg {
 }
 
 .about-bg-section,
-.portfolio-bg-section {
+.portfolio-bg-section,
+.gvblog-bg-section {
   background-color: #FAFBFF;
   padding: 80px 20px;
 }
 .about-bg-section .about-section,
 .about-bg-section .portfolio-section,
+.about-bg-section .gvblog-section,
 .portfolio-bg-section .about-section,
-.portfolio-bg-section .portfolio-section {
+.portfolio-bg-section .portfolio-section,
+.portfolio-bg-section .gvblog-section,
+.gvblog-bg-section .about-section,
+.gvblog-bg-section .portfolio-section,
+.gvblog-bg-section .gvblog-section {
   margin: 30px 0;
 }
 .about-bg-section .about-section h2, .about-bg-section .about-section .h2,
 .about-bg-section .portfolio-section h2,
 .about-bg-section .portfolio-section .h2,
+.about-bg-section .gvblog-section h2,
+.about-bg-section .gvblog-section .h2,
 .portfolio-bg-section .about-section h2,
 .portfolio-bg-section .about-section .h2,
 .portfolio-bg-section .portfolio-section h2,
-.portfolio-bg-section .portfolio-section .h2 {
+.portfolio-bg-section .portfolio-section .h2,
+.portfolio-bg-section .gvblog-section h2,
+.portfolio-bg-section .gvblog-section .h2,
+.gvblog-bg-section .about-section h2,
+.gvblog-bg-section .about-section .h2,
+.gvblog-bg-section .portfolio-section h2,
+.gvblog-bg-section .portfolio-section .h2,
+.gvblog-bg-section .gvblog-section h2,
+.gvblog-bg-section .gvblog-section .h2 {
   font-family: "Merriweather", serif;
   font-weight: bolder;
   font-size: clapm(1.8rem, 2.5vw, 3.375rem);
@@ -11576,33 +11596,58 @@ textarea.form-control-lg {
 .about-bg-section .about-section h3, .about-bg-section .about-section .h3,
 .about-bg-section .portfolio-section h3,
 .about-bg-section .portfolio-section .h3,
+.about-bg-section .gvblog-section h3,
+.about-bg-section .gvblog-section .h3,
 .portfolio-bg-section .about-section h3,
 .portfolio-bg-section .about-section .h3,
 .portfolio-bg-section .portfolio-section h3,
-.portfolio-bg-section .portfolio-section .h3 {
+.portfolio-bg-section .portfolio-section .h3,
+.portfolio-bg-section .gvblog-section h3,
+.portfolio-bg-section .gvblog-section .h3,
+.gvblog-bg-section .about-section h3,
+.gvblog-bg-section .about-section .h3,
+.gvblog-bg-section .portfolio-section h3,
+.gvblog-bg-section .portfolio-section .h3,
+.gvblog-bg-section .gvblog-section h3,
+.gvblog-bg-section .gvblog-section .h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
 .about-bg-section .about-section p,
 .about-bg-section .portfolio-section p,
+.about-bg-section .gvblog-section p,
 .portfolio-bg-section .about-section p,
-.portfolio-bg-section .portfolio-section p {
+.portfolio-bg-section .portfolio-section p,
+.portfolio-bg-section .gvblog-section p,
+.gvblog-bg-section .about-section p,
+.gvblog-bg-section .portfolio-section p,
+.gvblog-bg-section .gvblog-section p {
   font-family: "Ubuntu", sans-serif;
   color: #555555;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 .about-bg-section .about-section ul li,
 .about-bg-section .portfolio-section ul li,
+.about-bg-section .gvblog-section ul li,
 .portfolio-bg-section .about-section ul li,
-.portfolio-bg-section .portfolio-section ul li {
+.portfolio-bg-section .portfolio-section ul li,
+.portfolio-bg-section .gvblog-section ul li,
+.gvblog-bg-section .about-section ul li,
+.gvblog-bg-section .portfolio-section ul li,
+.gvblog-bg-section .gvblog-section ul li {
   color: #555555;
   font-size: 1.1rem;
   margin: 9px 0;
 }
 .about-bg-section .about-section a,
 .about-bg-section .portfolio-section a,
+.about-bg-section .gvblog-section a,
 .portfolio-bg-section .about-section a,
-.portfolio-bg-section .portfolio-section a {
+.portfolio-bg-section .portfolio-section a,
+.portfolio-bg-section .gvblog-section a,
+.gvblog-bg-section .about-section a,
+.gvblog-bg-section .portfolio-section a,
+.gvblog-bg-section .gvblog-section a {
   color: #6B6D77;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   text-decoration: underline;
@@ -11617,7 +11662,7 @@ textarea.form-control-lg {
 .gvcta-bg-section {
   background-color: #5B6EB6;
   color: #FFF;
-  padding: 40px 20px;
+  padding: 80px 20px;
   font-size: 1.4rem;
   font-weight: bold;
 }

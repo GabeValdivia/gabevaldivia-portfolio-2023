@@ -251,3 +251,20 @@ function custom_footer_widget_three() {
 register_sidebar( $args );
 }
 add_action('widgets_init', 'custom_footer_widget_three');
+
+/**
+ * Blog excerpt set to 20 char length
+ */
+
+function gabe_valdivia_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'gabe_valdivia_custom_excerpt_length', 999 );
+
+
+function new_excerpt_more($more) {
+	global $post;
+	return '<a class="moretag" 
+	href="'. get_permalink($post->ID) . '"> ...Read More</a>';
+   }
+   add_filter('excerpt_more', 'new_excerpt_more');
