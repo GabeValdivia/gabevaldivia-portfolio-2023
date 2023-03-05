@@ -11531,7 +11531,7 @@ textarea.form-control-lg {
 }
 .site-hero-section p {
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: #555555;
   line-height: 1.4;
   max-width: 650px;
@@ -11539,50 +11539,97 @@ textarea.form-control-lg {
 }
 .site-hero-section a {
   color: #FFF;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 .site-hero-section a:hover, .site-hero-section a:visited {
   color: #FFF;
 }
 @media (max-width: 767px) {
-  .site-hero-section .site-hero-section {
+  .site-hero-section {
     margin-top: 0px;
     padding: 60px 20px;
   }
 }
 
-.about-bg-section {
+.about-bg-section,
+.portfolio-bg-section {
   background-color: #FAFBFF;
-  padding: 140px 20px;
+  padding: 80px 20px;
 }
-.about-bg-section .about-section {
+.about-bg-section .about-section,
+.about-bg-section .portfolio-section,
+.portfolio-bg-section .about-section,
+.portfolio-bg-section .portfolio-section {
   margin: 30px 0;
 }
-.about-bg-section .about-section h2, .about-bg-section .about-section .h2 {
+.about-bg-section .about-section h2, .about-bg-section .about-section .h2,
+.about-bg-section .portfolio-section h2,
+.about-bg-section .portfolio-section .h2,
+.portfolio-bg-section .about-section h2,
+.portfolio-bg-section .about-section .h2,
+.portfolio-bg-section .portfolio-section h2,
+.portfolio-bg-section .portfolio-section .h2 {
   font-family: "Merriweather", serif;
   font-weight: bolder;
-  font-size: 3.375rem;
+  font-size: clapm(1.8rem, 2.5vw, 3.375rem);
 }
-.about-bg-section .about-section h3, .about-bg-section .about-section .h3 {
+.about-bg-section .about-section h3, .about-bg-section .about-section .h3,
+.about-bg-section .portfolio-section h3,
+.about-bg-section .portfolio-section .h3,
+.portfolio-bg-section .about-section h3,
+.portfolio-bg-section .about-section .h3,
+.portfolio-bg-section .portfolio-section h3,
+.portfolio-bg-section .portfolio-section .h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
-.about-bg-section .about-section p {
+.about-bg-section .about-section p,
+.about-bg-section .portfolio-section p,
+.portfolio-bg-section .about-section p,
+.portfolio-bg-section .portfolio-section p {
   font-family: "Ubuntu", sans-serif;
   color: #555555;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
-.about-bg-section .about-section ul li {
+.about-bg-section .about-section ul li,
+.about-bg-section .portfolio-section ul li,
+.portfolio-bg-section .about-section ul li,
+.portfolio-bg-section .portfolio-section ul li {
   color: #555555;
   font-size: 1.1rem;
   margin: 9px 0;
 }
-.about-bg-section .about-section a {
+.about-bg-section .about-section a,
+.about-bg-section .portfolio-section a,
+.portfolio-bg-section .about-section a,
+.portfolio-bg-section .portfolio-section a {
   color: #6B6D77;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   text-decoration: underline;
   font-weight: 500;
   font-family: "Ubuntu", sans-serif;
+}
+
+.portfolio-bg-section {
+  background-color: #FFF;
+}
+
+.gvcta-bg-section {
+  background-color: #5B6EB6;
+  color: #FFF;
+  padding: 40px 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.gvcta-bg-section p {
+  margin: 30px 0;
+}
+.gvcta-bg-section a {
+  color: #000000;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.gvcta-bg-section a:hover, .gvcta-bg-section a:visited {
+  color: #000000;
 }
 
 .site-footer {
@@ -11611,7 +11658,7 @@ footer .widget p,
 footer .widget li,
 footer .widget a {
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.1em;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 300;
 }
 footer .widget h3.ftr-brand-name, footer .widget .ftr-brand-name.h3 {
@@ -11634,7 +11681,7 @@ footer .widget ul li a {
 footer .widget ul li a i.bi.bi-linkedin,
 footer .widget ul li a i.bi.bi-github,
 footer .widget ul li a i.bi.bi-youtube {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   padding-right: 6px;
 }
 footer .widget ul li a:hover {

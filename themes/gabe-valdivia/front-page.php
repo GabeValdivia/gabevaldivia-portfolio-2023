@@ -90,6 +90,49 @@ get_header();
 		</div>
 		<!-- End About Me -->
 
+		<!-- Portfolio Section -->
+		<div class="portfolio-bg-section">
+			<section class="container">
+				<div class="row portfolio-section">
+					<div class="col-md-12">
+						<h2>Latest Projects</h2>
+						<p>I have 9 years of professional experience under my belt. I’m a skilled frontend web developer and SEO specialist with Google certifications in Digital Marketing & Google Tag Manager. In the course of my career I’ve worked with several fantastic marketing agencies in across the world and in 2 languages.</p>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="row portfolio-section">
+					<div class="col-12">
+						<!--Projects grid-->
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<div class="row portfolio-section">
+					<div class="col-md-12">
+						<a href="#" target="_blank"><i class="bi bi-github"></i> View GitHub Projects</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- End Portfolio Section -->
+
+		<!-- CTA Section -->
+		<div class="gvcta-bg-section">
+			<section class="container">
+				<div class="row gvcta-section">
+					<div class="col-md-12">
+						<p>Let’s work together. I’m available for contract or freelance work. Whether you need a skilled WordPress, Wix, Editor X, Shopify or plain CSS & HTML developer. I’m happy to step in and help out.</p>
+						<a href="#" class="btn btn-ghostWhite btn-lg" role="button">My Resume</a>
+					</div>
+				</div>
+			</section>
+		</div>		
+		<!-- End CTA Section -->
+
+		<!-- Blog Section -->
+		<!-- End Blog Section -->
+
 	</main><!-- #main -->
 
 <?php

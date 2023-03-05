@@ -108,7 +108,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     }
     p {
         font-family: "Ubuntu", sans-serif;
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
         color: $secondary;
         line-height: 1.4;
         max-width: 650px;
@@ -117,7 +117,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
     a {
         color: #FFF;
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
 
         &:hover,
         &:visited {
@@ -127,25 +127,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
     @media (max-width: 767px) {
         //styles here
-        .site-hero-section {
             margin-top: 0px;
             padding: 60px 20px;
-        }
     }
 }
 
-//About Me Section
-.about-bg-section {
+//About Me Section & Latest Projects Shared Styles
+.about-bg-section,
+.portfolio-bg-section {
     background-color: $ghostWhite;
-    padding: 140px 20px;
+    padding: 80px 20px;
 
-    .about-section {
+    .about-section,
+    .portfolio-section {
         margin: 30px 0;
 
         h2 {
             font-family: "Merriweather", serif;
             font-weight: bolder;
-            font-size: 3.375rem;
+            font-size: clapm(1.8rem, 2.5vw, 3.375rem);
         }
 
         h3 {
@@ -156,7 +156,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
         p {
             font-family: "Ubuntu", sans-serif;
             color: $secondary;
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
         }
 
         ul {
@@ -170,7 +170,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
         a {
             color: $gray;
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             text-decoration: underline;
             font-weight: 500;
             font-family: "Ubuntu", sans-serif;
@@ -178,6 +178,32 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     }
 }
 
+.portfolio-bg-section {
+    background-color: #FFF;
+}
+
+// GVCTA Section
+.gvcta-bg-section {
+    background-color: #5B6EB6;
+    color: #FFF;
+    padding: 40px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    p {
+        margin: 30px 0;
+    }
+
+    a {
+        color: $primary;
+        font-size: clamp(1rem, 2.5vw, 1.2rem); 
+
+        &:hover,
+        &:visited {
+            color: $primary;
+        }
+    }
+}
 
 //Footer Section
 .site-footer {
@@ -212,7 +238,7 @@ footer {
         li, 
         a {
             font-family: "Ubuntu", sans-serif;
-            font-size: 1.1em;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             font-weight: 300;
         }
 
@@ -237,7 +263,7 @@ footer {
                     i.bi.bi-linkedin, 
                     i.bi.bi-github,
                     i.bi.bi-youtube {
-                    font-size: 1.1rem;
+                    font-size: clamp(1rem, 2.5vw, 1.1rem);
                     padding-right: 6px;
                     }
                     
