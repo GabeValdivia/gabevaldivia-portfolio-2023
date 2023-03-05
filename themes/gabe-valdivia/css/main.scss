@@ -60,8 +60,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     }
 }
 
+.offcanvas-title {
+    font-weight: 600;
+}
+
 .offcanvas-body {
+
+    padding: 0 30px 30px 30px;
     
+    h5 {
+        font-weight: 600;
+    }
+
     .gv-follow-me {
         padding: 0;
         margin-top: 60px;
@@ -74,20 +84,28 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     }
 
     li {
-        display: inline;
-        padding-right: 7px;
+        display: block;
+        padding-right: 4px;
+        margin: 8px 0;
        
         a {
             color: $secondary;
             text-decoration: none;
+        }
+
+        &:hover {
+            color: $primary;
+            text-decoration: underline;
+            margin-left: 3px;
+            font-weight: 500;
         }
     }
 
     i.bi.bi-linkedin, 
     i.bi.bi-github,
     i.bi.bi-youtube {
-        font-size: 26px;
-        color: $primary;
+        font-size: 1.2rem;
+        color: $secondary;
     }
 }
 
@@ -219,6 +237,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     small {
         color:$gray;
     }
+
+    a.moretag {
+        color: $primary;
+    }
+}
+
+
+// Single Post Page Styles
+.gv-single-post-page {
+    margin: 100px 20px;
 }
 
 

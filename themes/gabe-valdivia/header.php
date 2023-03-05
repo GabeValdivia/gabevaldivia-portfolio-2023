@@ -38,6 +38,7 @@
 				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
 			<div class="offcanvas-body">
+				<!-- WP Nav -->
 				<?php
 					wp_nav_menu(
 						array(
@@ -47,15 +48,29 @@
 						)
 					);
 				?>
+				<!-- End WP Nav -->
+				
+				<!-- Contact Me -->
 				<div class="navbar-nav d-flex justify-content-start flex-grow-1 pe-3 gv-follow-me ">
-				<h5>Follow Me</h5>
+					<h5>Contact Me</h5>
 					<ul>
-						<li><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-						<li><a href="#" target="_blank"><i class="bi bi-github"></i></a></li>
-						<li><a href="#" target="_blank"><i class="bi bi-youtube"></i></i></a></li>
+						<li><a href="tel:523330348207" target="_blank"><i class="bi bi-telephone-fill"></i> +52 33 3034 8207</a></li>
+						<li><a href="mailto:hey@gabevaldivia.com" target="_blank"><i class="bi bi-envelope-at-fill"></i> hey@gabevaldivia.com</a></li>
+						<li><a href="https://goo.gl/maps/GWjtFoTi7Q9jeR6x6" target="_blank"><i class="bi bi-geo-alt-fill"></i> Tlaquepaque, Jalisco, Mexico</a></li>
 					</ul>
 				</div>
-			</div>
+				<!-- End Contact Me -->
+
+				<!-- Follow Me -->
+				<div class="navbar-nav d-flex justify-content-start flex-grow-1 pe-3 gv-follow-me ">
+					<h5>Follow Me</h5>
+					<ul>
+						<li><a href="https://www.linkedin.com/in/gabriel-s-valdivia/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+						<li><a href="https://github.com/GabeValdivia" target="_blank"><i class="bi bi-github"></i> GitHub</a></li>
+						<li><a href="https://www.youtube.com/channel/UCCeYJwtavwrnAnFKLrHGFgA" target="_blank"><i class="bi bi-youtube"></i> YouTube</a></li>
+					</ul>
+				</div>
+				<!-- End Follow Me -->
 			</div>
 		</div>
 	</nav>

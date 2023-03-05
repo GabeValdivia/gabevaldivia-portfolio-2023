@@ -11493,6 +11493,16 @@ textarea.form-control-lg {
   }
 }
 
+.offcanvas-title {
+  font-weight: 600;
+}
+
+.offcanvas-body {
+  padding: 0 30px 30px 30px;
+}
+.offcanvas-body h5, .offcanvas-body .h5 {
+  font-weight: 600;
+}
 .offcanvas-body .gv-follow-me {
   padding: 0;
   margin-top: 60px;
@@ -11502,18 +11512,25 @@ textarea.form-control-lg {
   padding: 0;
 }
 .offcanvas-body li {
-  display: inline;
-  padding-right: 7px;
+  display: block;
+  padding-right: 4px;
+  margin: 8px 0;
 }
 .offcanvas-body li a {
   color: #555555;
   text-decoration: none;
 }
+.offcanvas-body li:hover {
+  color: #000000;
+  text-decoration: underline;
+  margin-left: 3px;
+  font-weight: 500;
+}
 .offcanvas-body i.bi.bi-linkedin,
 .offcanvas-body i.bi.bi-github,
 .offcanvas-body i.bi.bi-youtube {
-  font-size: 26px;
-  color: #000000;
+  font-size: 1.2rem;
+  color: #555555;
 }
 
 .navbar-custom {
@@ -11683,6 +11700,13 @@ textarea.form-control-lg {
 }
 .gvblog-section small, .gvblog-section .small {
   color: #6B6D77;
+}
+.gvblog-section a.moretag {
+  color: #000000;
+}
+
+.gv-single-post-page {
+  margin: 100px 20px;
 }
 
 .site-footer {

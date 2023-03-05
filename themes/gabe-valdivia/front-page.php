@@ -34,7 +34,7 @@ get_header();
         <!-- Hero end -->
 
 		<!-- About Me -->
-		<div class="about-bg-section">
+		<div class="about-bg-section" id="about_me">
 			<section class="container">
 				<div class="row about-section">
 					<div class="col-md-12">
@@ -97,12 +97,13 @@ get_header();
 		<!-- End Portfolio Section -->
 
 		<!-- CTA Section -->
-		<div class="gvcta-bg-section">
+		<div class="gvcta-bg-section" id="resume">
 			<section class="container">
 				<div class="row gvcta-section">
 					<div class="col-md-12">
 						<p>Let’s work together. I’m available for contract or freelance work. Whether you need a skilled WordPress, Wix, Editor X, Shopify or plain CSS & HTML developer. I’m happy to step in and help out.</p>
-						<a href="#" class="btn btn-ghostWhite btn-lg" role="button">My Resume</a>
+						<a href="http://gabevaldivia.local/wp-content/uploads/2023/03/Resume-Gabriel-Valdivia.pdf" class="btn btn-ghostWhite btn-lg" role="button" target="_blank">My Resume</a>
+						
 					</div>
 				</div>
 			</section>
@@ -110,7 +111,7 @@ get_header();
 		<!-- End CTA Section -->
 
 		<!-- Blog Section -->
-		<div class="gvblog-bg-section">
+		<div class="gvblog-bg-section" id="blog_section">
 			<section class="container">
 				<div class="row gvblog-section">
 					<div class="col-md-12">
