@@ -211,7 +211,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 }
 
 // Recent Blog Section
-
+.gvblog-section {
+    h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500!important;
+    }
+    small {
+        color:$gray;
+    }
+}
 
 
 //Footer Section

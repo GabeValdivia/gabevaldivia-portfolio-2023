@@ -11677,6 +11677,14 @@ textarea.form-control-lg {
   color: #000000;
 }
 
+.gvblog-section h3, .gvblog-section .h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500 !important;
+}
+.gvblog-section small, .gvblog-section .small {
+  color: #6B6D77;
+}
+
 .site-footer {
   background-color: #5B6EB6;
 }

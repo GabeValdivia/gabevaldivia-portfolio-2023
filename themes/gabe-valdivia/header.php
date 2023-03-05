@@ -47,7 +47,6 @@
 						)
 					);
 				?>
-				
 				<div class="navbar-nav d-flex justify-content-start flex-grow-1 pe-3 gv-follow-me ">
 				<h5>Follow Me</h5>
 					<ul>

@@ -197,6 +197,73 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * About Section Widget One
+ */
+function custom_about_widget_one() {
+	$args = array(
+	'id'                => 'about-widget-col-one',
+	'name'              => __('About Column One', 'text_domain'),
+	'description'       => __('Column One', 'text_domain'),
+	'before_title'      => '<h3 class="title">',
+	'after_title'       => '</h3>',
+	'before_widget'     => '<div id="%1$s" class="widget %2$s">',
+	'after_widget'      => '</div>' 
+	);
+register_sidebar( $args );
+}
+add_action('widgets_init', 'custom_about_widget_one');
+
+/**
+ * About Section Widget Two
+ */
+function custom_about_widget_two() {
+	$args = array(
+	'id'                => 'about-widget-col-two',
+	'name'              => __('About Column Two', 'text_domain'),
+	'description'       => __('Column Two', 'text_domain'),
+	'before_title'      => '<h3 class="title">',
+	'after_title'       => '</h3>',
+	'before_widget'     => '<div id="%1$s" class="widget %2$s">',
+	'after_widget'      => '</div>' 
+	);
+register_sidebar( $args );
+}
+add_action('widgets_init', 'custom_about_widget_two');
+
+/**
+ * About Section Widget Three
+ */
+function custom_about_widget_three() {
+	$args = array(
+	'id'                => 'about-widget-col-three',
+	'name'              => __('About Column Three', 'text_domain'),
+	'description'       => __('Column Three', 'text_domain'),
+	'before_title'      => '<h3 class="title">',
+	'after_title'       => '</h3>',
+	'before_widget'     => '<div id="%1$s" class="widget %2$s">',
+	'after_widget'      => '</div>' 
+	);
+register_sidebar( $args );
+}
+add_action('widgets_init', 'custom_about_widget_three');
+
+/**
+ * About Section Widget Four
+ */
+function custom_about_widget_four() {
+	$args = array(
+	'id'                => 'about-widget-col-four',
+	'name'              => __('About Column Four', 'text_domain'),
+	'description'       => __('Column Four', 'text_domain'),
+	'before_title'      => '<h3 class="title">',
+	'after_title'       => '</h3>',
+	'before_widget'     => '<div id="%1$s" class="widget %2$s">',
+	'after_widget'      => '</div>' 
+	);
+register_sidebar( $args );
+}
+add_action('widgets_init', 'custom_about_widget_four');
 
 /**
  * Footer Widget One
@@ -257,14 +324,14 @@ add_action('widgets_init', 'custom_footer_widget_three');
  */
 
 function gabe_valdivia_custom_excerpt_length( $length ) {
-    return 20;
+    return 15;
 }
 add_filter( 'excerpt_length', 'gabe_valdivia_custom_excerpt_length', 999 );
 
 
 function new_excerpt_more($more) {
 	global $post;
-	return '<a class="moretag" 
-	href="'. get_permalink($post->ID) . '"> ...Read More</a>';
+	return '. <a class="moretag" 
+	href="'. get_permalink($post->ID) . '">Read More &raquo;</a>';
    }
    add_filter('excerpt_more', 'new_excerpt_more');

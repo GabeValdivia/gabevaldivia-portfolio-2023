@@ -23,7 +23,7 @@ get_header();
 					<div class="col-sm-12 col-md-6 col-lg-8">
 						<h1>Frontend Web Developer</h1>
 						<p>I do freelance and contract work for various agencies and small businesses. My specialty is frontend Web Development on various platfroms ( WordPress, Shopify, Wix/EditorX, and Squarespce).</p>
-						<a href="#" class="btn btn-primary btn-lg" role="button">View My Work</a>
+						<a href="#latest-projects" class="btn btn-primary btn-lg" role="button">View My Work</a>
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-4 text-align-center d-none d-md-block">
 						<img class="img-fluid text-light" src="<?php echo get_template_directory_uri(); ?>/img/profile-pic.webp" alt="profile picture of Gabe Valdivia" />
@@ -46,44 +46,23 @@ get_header();
 			<section class="container">
 				<div class="row about-section">
 					<div class="col-xs-6 col-md-6 col-lg-3">
-						<h3>Programming</h3>
-						<ul>
-							<li>HTML5</li>
-							<li>SCSS/CSS</li>
-							<li>JavaScript</li>
-							<li>PHP</li>
-						</ul>
+						<?php dynamic_sidebar('about-widget-col-one'); ?>
 					</div>
 					<div class="col-6 col-lg-3">
-						<h3>Platforms</h3>
-						<ul>
-							<li>WordPress</li>
-							<li>Shopify</li>
-							<li>Wix</li>
-							<li>Editor X</li>
-						</ul>
+					<?php dynamic_sidebar('about-widget-col-two'); ?>
 					</div>
 					<div class="col-xs-6 col-md-6 col-lg-3">
-						<h3>Frameworks</h3>
-						<ul>
-							<li>React</li>
-							<li>Gatsby</li>
-							<li>Shopify/Liquid</li>
-						</ul>
+					<?php dynamic_sidebar('about-widget-col-three'); ?>
 					</div>
 					<div class="col-xs-6 col-md-6 col-lg-3">
-						<h3>Languages</h3>
-						<ul>
-							<li>English (Native)</li>
-							<li>Spanish (Fluent)</li>
-						</ul>
+					<?php dynamic_sidebar('about-widget-col-four'); ?>
 					</div>
 				</div>
 			</section>
 			<section class="container">
 				<div class="row about-section">
 					<div class="col-md-12">
-						<a href="#" target="_blank"><i class="bi bi-file-earmark-pdf-fill"></i> View Resume PDF</a>
+						<a href="https://www.linkedin.com/in/gabriel-s-valdivia/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn Profile</a>
 					</div>
 				</div>
 			</section>
@@ -91,7 +70,7 @@ get_header();
 		<!-- End About Me -->
 
 		<!-- Portfolio Section -->
-		<div class="portfolio-bg-section">
+		<div class="portfolio-bg-section" id="latest-projects">
 			<section class="container">
 				<div class="row portfolio-section">
 					<div class="col-md-12">
