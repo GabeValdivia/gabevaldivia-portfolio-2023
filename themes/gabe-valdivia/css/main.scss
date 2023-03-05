@@ -247,6 +247,78 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 // Single Post Page Styles
 .gv-single-post-page {
     margin: 100px 20px;
+
+    article {
+
+        .entry-header {
+            margin-bottom: 30px;
+        }
+        .entry-title {
+            font-family: "Merriweather", serif;
+        }
+
+        .entry-meta {
+            font-size: .8rem;
+            color: $gray;
+
+            a {
+                color: #5B6EB6;
+                font-weight: bolder;
+            }
+        }
+
+        p {
+            color: $secondary;
+            font-family: "Ubuntu", sans-serif;
+            font-size: clamp(1rem, 2.5vw, 1.2rem); 
+        }
+
+        a {
+            color: #5B6EB6;
+            font-weight: bolder;
+            font-family: "Ubuntu", sans-serif;
+        }
+    }
+
+    aside {
+        
+        h3 {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+        }
+
+        ul {
+
+            margin: 0;
+
+            li {
+                font-size: clamp(1rem, 2.5vw, 1.1rem); 
+                margin: 9px 0;
+                
+                a {
+                    color: $secondary;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .post-navigation {
+        a {
+            color: #5B6EB6;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
 }
 
 
