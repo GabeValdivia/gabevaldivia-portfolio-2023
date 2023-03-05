@@ -20,13 +20,13 @@ get_header();
 		<div class="hero-bg-section">
 			<section class="container site-hero-section">
 				<div class="row align-items-center">
-					<div class="col-md-8">
+					<div class="col-sm-12 col-md-6 col-lg-8">
 						<h1>Frontend Web Developer</h1>
 						<p>I do freelance and contract work for various agencies and small businesses. My specialty is frontend Web Development on various platfroms ( WordPress, Shopify, Wix/EditorX, and Squarespce).</p>
 						<a href="#" class="btn btn-primary btn-lg" role="button">View My Work</a>
 					</div>
-					<div class="col-md-4 text-align-center">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/profile-pic.webp" alt="profile picture of Gabe Valdivia" />
+					<div class="col-sm-12 col-md-6 col-lg-4 text-align-center d-none d-md-block">
+						<img class="img-fluid text-light" src="<?php echo get_template_directory_uri(); ?>/img/profile-pic.webp" alt="profile picture of Gabe Valdivia" />
 					</div>
 				</div>
 			</section>
@@ -45,7 +45,7 @@ get_header();
 			</section>
 			<section class="container">
 				<div class="row about-section">
-					<div class="col-md-3">
+					<div class="col-xs-6 col-md-6 col-lg-3">
 						<h3>Programming</h3>
 						<ul>
 							<li>HTML5</li>
@@ -54,7 +54,7 @@ get_header();
 							<li>PHP</li>
 						</ul>
 					</div>
-					<div class="col-md-3">
+					<div class="col-6 col-lg-3">
 						<h3>Platforms</h3>
 						<ul>
 							<li>WordPress</li>
@@ -63,7 +63,7 @@ get_header();
 							<li>Editor X</li>
 						</ul>
 					</div>
-					<div class="col-md-3">
+					<div class="col-xs-6 col-md-6 col-lg-3">
 						<h3>Frameworks</h3>
 						<ul>
 							<li>React</li>
@@ -71,7 +71,7 @@ get_header();
 							<li>Shopify/Liquid</li>
 						</ul>
 					</div>
-					<div class="col-md-3">
+					<div class="col-xs-6 col-md-6 col-lg-3">
 						<h3>Languages</h3>
 						<ul>
 							<li>English (Native)</li>
