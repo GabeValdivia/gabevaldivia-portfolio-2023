@@ -132,8 +132,12 @@ get_header();
 						<?php if ( $the_query->have_posts() ) : ?>
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							<div class="col-md-4 col-sm-12 grid gap-0 gap-3">
-								<?php the_post_thumbnail(); ?>
-								<h3><?php the_title(); ?></h3>
+							<?php if ( has_post_thumbnail() ) : ?>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+									<?php the_post_thumbnail(); ?>
+								</a>
+							<?php endif; ?>
+								<h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 								<small>On <?php the_time('F jS, Y'); ?></small>
 								<p><?php the_excerpt(); ?></p>
 							</div>

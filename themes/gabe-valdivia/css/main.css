@@ -11694,9 +11694,12 @@ textarea.form-control-lg {
   color: #000000;
 }
 
-.gvblog-section h3, .gvblog-section .h3 {
+.gvblog-section h3 a, .gvblog-section .h3 a {
+  font-size: clamp(1rem, 2.5vw, 1.4rem) !important;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500 !important;
+  text-decoration: none !important;
+  color: #000000 !important;
 }
 .gvblog-section small, .gvblog-section .small {
   color: #6B6D77;
@@ -11752,6 +11755,7 @@ textarea.form-control-lg {
   color: #000000;
 }
 .gv-single-post-page .post-navigation a {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   color: #5B6EB6;
   text-decoration: none;
 }
