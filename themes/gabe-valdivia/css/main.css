@@ -11676,6 +11676,41 @@ textarea.form-control-lg {
   background-color: #FFF;
 }
 
+.portfolio-section .gvp_cpt {
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: 2px solid rgba(91, 110, 182, 0.4);
+}
+
+.gv-single-post-page h2, .gv-single-post-page .h2 {
+  font-family: "Merriweather", serif;
+  font-weight: bolder;
+  font-size: clapm(1.8rem, 2.5vw, 3.375rem);
+}
+.gv-single-post-page a.cpt-gvp {
+  color: #FAFBFF;
+  margin: 30px 0;
+}
+.gv-single-post-page a.video-btn {
+  background-color: red;
+  margin-left: 9px;
+}
+.gv-single-post-page p {
+  font-family: "Ubuntu", sans-serif;
+  color: #555555;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.gv-single-post-page ul {
+  margin: 0;
+  padding: 12px;
+}
+.gv-single-post-page ul li {
+  color: #555555;
+  font-size: 1.1rem;
+  margin: 9px 0;
+}
+
 .gvcta-bg-section {
   background-color: #5B6EB6;
   color: #FFF;
@@ -11761,6 +11796,66 @@ textarea.form-control-lg {
 }
 .gv-single-post-page .post-navigation a:hover {
   color: #000000;
+}
+
+.notFound404 {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+.notFound404 h1, .notFound404 .h1 {
+  font-size: 66px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.notFound404 p {
+  text-align: center;
+}
+
+.gv-archive-page {
+  margin: 100px 60px;
+}
+.gv-archive-page article {
+  width: calc(33% - 20px);
+  display: inline-block;
+  padding: 20px;
+  vertical-align: text-top;
+}
+.gv-archive-page article .entry-header {
+  margin-bottom: 30px;
+}
+.gv-archive-page article h2, .gv-archive-page article .h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+.gv-archive-page article h2 a, .gv-archive-page article .h2 a {
+  text-decoration: none;
+  color: #000000;
+}
+.gv-archive-page article .entry-meta {
+  font-size: 0.8rem;
+  color: #6B6D77;
+}
+.gv-archive-page article .entry-meta a {
+  color: #5B6EB6;
+  font-weight: bolder;
+}
+.gv-archive-page article .entry-content p {
+  color: #555555;
+  font-family: "Ubuntu", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.gv-archive-page article .entry-footer {
+  color: #555555;
+  font-family: "Ubuntu", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.gv-archive-page article .entry-footer .cat-links a {
+  color: #5B6EB6;
+  font-weight: bolder;
 }
 
 .site-footer {

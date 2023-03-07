@@ -34,6 +34,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     margin-bottom: 0;
 }
 
+
 // Nav Section
 .site-header {
     .navbar, .offcanvas {
@@ -201,9 +202,61 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     }
 }
 
+// Latest Projects Section
+
 .portfolio-bg-section {
     background-color: #FFF;
 }
+
+.portfolio-section {
+    .gvp_cpt {
+        height: 300px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        border: 2px solid rgba(91, 110, 182, .4);
+    }
+}
+
+//Portfolio Custom Post Type
+.gv-single-post-page {
+
+    h2 {
+        font-family: "Merriweather", serif;
+        font-weight: bolder;
+        font-size: clapm(1.8rem, 2.5vw, 3.375rem);
+    }
+
+    a.cpt-gvp {
+        color: $ghostWhite;
+        margin: 30px 0; 
+            
+    }
+
+    a.video-btn {
+        background-color: red;
+        margin-left: 9px;
+    }
+
+    p {
+        font-family: "Ubuntu", sans-serif;
+        color: $secondary;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+    ul {
+        margin: 0;
+        padding: 12px;
+
+        li {
+            color: $secondary;
+            font-size: 1.1rem;
+            margin: 9px 0; 
+        }
+    }
+
+
+}
+
 
 // GVCTA Section
 .gvcta-bg-section {
@@ -328,6 +381,86 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     }
 }
 
+//404 page
+.notFound404 {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 66px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+//Archive Page
+.gv-archive-page{
+    margin: 100px 60px;
+
+    article {
+        width: calc(33% - 20px);
+        display: inline-block;
+        padding:  20px;
+        vertical-align: text-top;
+
+        .entry-header {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+
+            a {
+                text-decoration: none;
+                color: $primary;
+            }
+        }
+
+        .entry-meta {
+            font-size: .8rem;
+            color: $gray;
+
+            a {
+                color: #5B6EB6;
+                font-weight: bolder;
+            }
+        }
+
+        .entry-content {
+            p {
+                color: $secondary;
+                font-family: "Ubuntu", sans-serif;
+                font-size: clamp(1rem, 2.5vw, 1.2rem); 
+            }           
+        
+        }
+
+        .entry-footer {
+
+            color: $secondary;
+            font-family: "Ubuntu", sans-serif;
+            font-size: clamp(1rem, 2.5vw, 1.2rem); 
+
+            .cat-links {
+
+                a {
+                    color: #5B6EB6;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
 
 //Footer Section
 .site-footer {

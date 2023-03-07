@@ -75,15 +75,46 @@ get_header();
 				<div class="row portfolio-section">
 					<div class="col-md-12">
 						<h2>Latest Projects</h2>
-						<p>I have 9 years of professional experience under my belt. I’m a skilled frontend web developer and SEO specialist with Google certifications in Digital Marketing & Google Tag Manager. In the course of my career I’ve worked with several fantastic marketing agencies in across the world and in 2 languages.</p>
 					</div>
 				</div>
 			</section>
 			<section class="container">
 				<div class="row portfolio-section">
-					<div class="col-12">
+					<!-- <div class="col-3"> -->
 						<!--Projects grid-->
-					</div>
+						<!--Blog loop-->
+						<?php 
+						// the query
+						$the_query = new WP_Query( array(
+							'post_type' => 'gv_portfolio',
+							'posts_per_page' => 12,
+							'order'   => 'ASC'
+						)); 
+						?>
+
+						<?php if ( $the_query->have_posts() ) : ?>
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+							<div class="col-md-4 col-sm-12 grid gap-0 gap-3">
+								<div class="gvp_cpt">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+										<?php the_post_thumbnail(); ?>
+									</a>
+								<?php endif; ?>
+								</div>
+								
+							</div>
+							
+							
+
+						<?php endwhile; ?>
+						<?php wp_reset_postdata(); ?>
+
+						<?php else : ?>
+						<p><?php __('No News'); ?></p>
+						<?php endif; ?>
+					<!-- </div> -->
+					<!-- </div> -->
 				</div>
 			</section>
 			<section class="container">

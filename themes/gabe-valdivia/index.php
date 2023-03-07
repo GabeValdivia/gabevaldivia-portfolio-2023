@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
+	<main id="primary" class="site-main container">
+		<h1>Test Blog Template</h1>
 		<?php
 		if ( have_posts() ) :
 
@@ -26,8 +26,10 @@ get_header();
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 				<?php
-			endif;
-
+			endif;?>
+			<div class="row">
+				<div class="col-sm-12 grid gap-3 gv-archive-page">
+			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -49,9 +51,11 @@ get_header();
 
 		endif;
 		?>
+			</div>
+				</div>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
