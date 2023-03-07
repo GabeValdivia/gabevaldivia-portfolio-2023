@@ -11473,9 +11473,6 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
-.site-header .navbar, .site-header .offcanvas {
-  margin-top: 30px;
-}
 .site-header .menu {
   margin: 0;
   padding: 0;
@@ -11542,7 +11539,6 @@ textarea.form-control-lg {
 }
 
 .site-hero-section {
-  margin-top: 60px;
   padding: 140px 20px;
 }
 .site-hero-section h1, .site-hero-section .h1 {
@@ -11741,6 +11737,9 @@ textarea.form-control-lg {
 }
 .gvblog-section a.moretag {
   color: #000000;
+}
+.gvblog-section img {
+  height: 220px;
 }
 
 .gv-single-post-page {

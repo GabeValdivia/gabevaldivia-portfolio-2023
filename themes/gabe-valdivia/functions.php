@@ -331,7 +331,7 @@ add_filter( 'excerpt_length', 'gabe_valdivia_custom_excerpt_length', 999 );
 
 function new_excerpt_more($more) {
 	global $post;
-	return '. <a class="moretag" 
+	return '<br/> <a class="moretag" 
 	href="'. get_permalink($post->ID) . '">Read More &raquo;</a>';
    }
    add_filter('excerpt_more', 'new_excerpt_more');

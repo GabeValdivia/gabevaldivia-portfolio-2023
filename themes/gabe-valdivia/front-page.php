@@ -120,7 +120,7 @@ get_header();
 			<section class="container">
 				<div class="row portfolio-section">
 					<div class="col-md-12">
-						<a href="#" target="_blank"><i class="bi bi-github"></i> View GitHub Projects</a>
+						<a href="https://github.com/GabeValdivia" target="_blank"><i class="bi bi-github"></i> View GitHub Projects</a>
 					</div>
 				</div>
 			</section>

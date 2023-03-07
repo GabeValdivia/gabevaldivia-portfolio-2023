@@ -37,9 +37,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
 // Nav Section
 .site-header {
-    .navbar, .offcanvas {
-        margin-top: 30px;
-    }
+    // .navbar, .offcanvas {
+    //     margin-top: 30px;
+    // }
 
     .menu {
         margin: 0;
@@ -120,7 +120,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 }
 
 .site-hero-section {
-    margin-top: 60px;
+    // margin-top: 60px;
     padding: 140px 20px;
 
     h1 {
@@ -299,6 +299,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 
     a.moretag {
         color: $primary;
+    }
+
+    img {
+        height: 220px;
     }
 }
 
