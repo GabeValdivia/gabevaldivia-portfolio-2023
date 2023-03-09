@@ -94,7 +94,7 @@ get_header();
 
 						<?php if ( $the_query->have_posts() ) : ?>
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-							<div class="col-md-4 col-sm-12 grid gap-0 gap-3">
+							<div class="col-md-4 col-sm-12 grid gap-0 gap-3 mb-5">
 								<div class="gvp_cpt">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -133,7 +133,7 @@ get_header();
 				<div class="row gvcta-section">
 					<div class="col-md-12">
 						<p>Let’s work together. I’m available for contract or freelance work. Whether you need a skilled WordPress, Wix, Editor X, Shopify or plain CSS & HTML developer. I’m happy to step in and help out.</p>
-						<a href="http://gabevaldivia.local/wp-content/uploads/2023/03/Resume-Gabriel-Valdivia.pdf" class="btn btn-ghostWhite btn-lg" role="button" target="_blank">My Resume</a>
+						<a href="http://gabevaldivia.com/wp-content/uploads/2023/03/Resume-Gabriel-Valdivia.pdf" class="btn btn-ghostWhite btn-lg" role="button" target="_blank">My Resume</a>
 						
 					</div>
 				</div>

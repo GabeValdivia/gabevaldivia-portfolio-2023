@@ -11539,10 +11539,11 @@ textarea.form-control-lg {
 }
 
 .site-hero-section {
+  margin-top: 30px;
   padding: 140px 20px;
 }
 .site-hero-section h1, .site-hero-section .h1 {
-  font-size: 3.375rem;
+  font-size: clamp(2.2rem, 3.5vw, 3.375rem);
   font-family: "Merriweather", serif;
   font-weight: bold;
 }
@@ -11563,8 +11564,8 @@ textarea.form-control-lg {
 }
 @media (max-width: 767px) {
   .site-hero-section {
-    margin-top: 0px;
-    padding: 60px 20px;
+    margin-top: 30px;
+    padding: 120px 20px;
   }
 }
 
